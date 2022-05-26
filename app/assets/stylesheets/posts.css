@@ -12,53 +12,45 @@ div {
 /* ヘッダー */
 .inner {
   width: 1440px;
+  margin: 0 auto;
 }
 .nav {
   height: 100px;
   width: 100%;
   display: flex;
-  background-color: aliceblue;
+  justify-content: space-between;
+  background-color: darkseagreen;
 }
 .logo {
   margin-left: 0;
   width: 200px;
   height: 100px;
 }
+.nav__right{
+  margin: auto 0;
+}
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87CEFA;
+  color: black;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px white solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
 .nav__btn:hover{
-  color: #fff;
-  background: #87CEFA;
-}
-
-.nav__logout{
-  display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #87CEFA;
-  text-decoration: none;
-  user-select: none;
-}
-.nav__logout:hover{
-  opacity: 0.5;
+  color: darkseagreen;
+  background: white;
 }
 /* トップページ */
-.wrapper{
+.main{
   min-height: calc(100vh - 112px);
 }
-.proto
 /* フッター */
 .footer {
-  background-color: grey;
+  background-color: darkseagreen;
   padding: 10px 0;
 }
 .footer-name {
