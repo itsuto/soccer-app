@@ -1,0 +1,69 @@
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+/* ヘッダー */
+.inner {
+  width: 1440px;
+}
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  background-color: aliceblue;
+}
+.logo {
+  margin-left: 0;
+  width: 200px;
+  height: 100px;
+}
+.nav__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.nav__btn:hover{
+  color: #fff;
+  background: #87CEFA;
+}
+
+.nav__logout{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+}
+.nav__logout:hover{
+  opacity: 0.5;
+}
+/* トップページ */
+.wrapper{
+  min-height: calc(100vh - 112px);
+}
+.proto
+/* フッター */
+.footer {
+  background-color: grey;
+  padding: 10px 0;
+}
+.footer-name {
+  margin-bottom: 0;
+  text-align: center;
+  color: black;
+  font-size: 10px;
+}
