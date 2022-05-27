@@ -44,8 +44,27 @@ div {
   color: darkseagreen;
   background: white;
 }
+.nav__logout{
+  display: inline-block;
+  font-size: 0.8em;
+  text-decoration: none;
+  border: 1px white solid;
+  color: red;
+  border-radius: 3px;
+  padding: 0.4em 1.6em;
+  user-select: none;
+}
+.nav__logout:hover{
+  color: white;
+  background: red; 
+}
 /* トップページ */
 .main{
+  min-height: calc(100vh - 112px);
+}
+/* サインイン */
+.row{
+  margin-top: 10px;
   min-height: calc(100vh - 112px);
 }
 /* フッター */
