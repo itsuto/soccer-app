@@ -1,0 +1,122 @@
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+/* ヘッダー */
+.inner {
+  width: 1440px;
+  margin: 0 auto;
+}
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: darkseagreen;
+}
+.logo {
+  margin-left: 0;
+  width: 200px;
+  height: 100px;
+}
+.nav__right{
+  margin: auto 0;
+}
+.nav__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: black;
+  text-decoration: none;
+  user-select: none;
+  border: 1px white solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.nav__btn:hover{
+  color: darkseagreen;
+  background: white;
+}
+.nav__logout{
+  display: inline-block;
+  font-size: 0.8em;
+  text-decoration: none;
+  border: 1px white solid;
+  color: red;
+  border-radius: 3px;
+  padding: 0.4em 1.6em;
+  user-select: none;
+}
+.nav__logout:hover{
+  color: white;
+  background: red; 
+}
+.greeting{
+  margin-top: 30px;
+}
+.greeting__link{
+  text-decoration: underline;
+  color: black;
+}
+/* トップページ */
+.main{
+  min-height: calc(100vh - 112px);
+}
+/* ユーザー */
+.row{
+  min-height: calc(100vh - 112px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 5px;
+  width: 500px;
+  background-color: whitesmoke;
+}
+.signup-top{
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: red;
+}
+.actions{
+  margin: 30px 0;
+
+}
+.submit{
+  display: inline-block;
+  text-decoration: none;
+  padding:  1.6em;
+  font-size: 20px;
+}
+.field{
+  margin-bottom: 20px;
+}
+.login-top{
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: red;
+}
+/* フッター */
+.footer {
+  background-color: darkseagreen;
+  padding: 10px 0;
+}
+.footer-name {
+  margin-bottom: 0;
+  text-align: center;
+  color: black;
+  font-size: 10px;
+}
