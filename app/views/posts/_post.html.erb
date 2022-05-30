@@ -1,0 +1,19 @@
+<h1>練習メニューの一覧</h1>
+<%= link_to "投稿する", new_post_path, class:"posts" %>
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <div class="post-category">
+      <%= post.category.name %>
+    </div>
+    <div class="post-genre">
+      <%= post.genre.name %>
+    </div>
+    <div class="post-title">
+      <%= post.title %>
+    </div>
+    <div class="post-content">
+      <%= post.content %>
+    </div>
+  </div>
+<% end %>
