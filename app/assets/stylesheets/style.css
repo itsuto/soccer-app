@@ -170,6 +170,12 @@ h1{
   width: 300px;
   height: 30px;
 }
+
+/* エラーメッセージ */
+.error-message{
+  color: red;
+  font-size: 20px;
+}
 /* フッター */
 .footer {
   background-color: darkseagreen;
