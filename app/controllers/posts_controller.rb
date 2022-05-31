@@ -22,17 +22,15 @@ class PostsController < ApplicationController
   end
 
   def edit
-    unless user_signed_in? && current_user.id == @post.user_id
-     redirect_to action: :index
-    end
+    redirect_to action: :index unless user_signed_in? && current_user.id == @post.user_id
   end
 
   def update
     if @post.update(post_params)
-     redirect_to post_path
+      redirect_to post_path
     else
-     render :edit
-    end 
+      render :edit
+    end
   end
 
   private
