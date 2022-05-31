@@ -1,0 +1,37 @@
+<main class="main">
+  <div class="inner">
+    <div class="post__wrapper">
+      <div class="show-head">
+          <div class="show-category">
+          カテゴリー：
+            <%= @post.category.name %>
+          </div>
+          <div class="show-genre">
+          ジャンル：
+            <%= @post.genre.name %>
+          </div>
+      </div>
+      <%= link_to "by #{@post.user.username}", user_path(@post.user_id), class: :post__user %>
+      <% if user_signed_in? && current_user.id == @post.user_id %>
+        <div class="post__manage">
+          <%= link_to "編集する", edit_post_path(@post.id), class: :post__btn %>
+          <%= link_to "削除する", post_path(@post.id),method: :delete, class: :post__btn %>
+        </div>
+      <% end %>  
+      <div class="post__body">
+        <div class="post__detail">
+          <p class="detail__title">タイトル</p>
+          <p class="detail__message">
+            <%= @post.title %>
+          </p>
+        </div>
+        <div class="post__detail">
+          <p class="detail__title">内容</p>
+          <p class="detail__message">
+            <%= @post.content %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

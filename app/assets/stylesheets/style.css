@@ -204,6 +204,59 @@ h1{
 .index-category{
   margin-right: 40px;
 }
+/* 詳細ページ */
+.post__wrapper{
+  min-height: calc(100vh - 161px);
+}
+.show-head{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.show-category{
+  margin-right: 40px;
+}
+.post__user{
+  display: block;
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  text-decoration: underline;
+}
+.post__detail{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.detail__title{
+  font-size: 20px;
+  font-weight: bold;
+}
+.post__manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.post__btn{
+  display: block;
+  padding: 0.4em 1.6em;
+  font-size: 0.4em;
+  color: #999;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #999 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 0 4px;
+}
+.post__btn:hover{
+  color: #fff;
+  background: #999;
+}
+
 /* エラーメッセージ */
 .error-message{
   color: red;
