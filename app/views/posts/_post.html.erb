@@ -1,19 +1,32 @@
-<h1>練習メニューの一覧</h1>
-<%= link_to "投稿する", new_post_path, class:"posts" %>
-
-<% @posts.each do |post| %>
-  <div class="post">
-    <div class="post-category">
-      <%= post.category.name %>
-    </div>
-    <div class="post-genre">
-      <%= post.genre.name %>
-    </div>
-    <div class="post-title">
-      <%= post.title %>
-    </div>
-    <div class="post-content">
-      <%= post.content %>
-    </div>
-  </div>
-<% end %>
+<div class="post-index">
+  <div class="index-head">
+   <div class="index-head-left">
+      <div class="index-category">
+      カテゴリー：
+        <%= post.category.name %>
+      </div>
+      <div class="index-genre">
+      ジャンル：
+        <%= post.genre.name %>
+      </div>
+   </div>
+    <div class="more">
+        <ul class="more_list">
+          <li>
+            <%= link_to '詳細', "#" %>
+          </li>
+            <% if user_signed_in? && current_user.id == post.user_id %>
+          <li>
+            <%= link_to '編集', "#" %>
+          </li>
+          <li>
+            <%= link_to '削除', "#" %>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+  </div>    
+     <div class="index-title">
+       <%= post.title %>
+     </div>
+</div>
