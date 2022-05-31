@@ -121,7 +121,7 @@ div {
   color: red;
 }
 
-/* 練習メニュー一覧 */
+/* 練習メニュー投稿 */
 h1{
   text-align: center;
 }
@@ -170,7 +170,40 @@ h1{
   width: 300px;
   height: 30px;
 }
-
+/* 練習メニュー一覧 */
+.tr-index{
+  width: 200px;
+  text-align: center;
+  margin: 20px auto 20px;
+  font-size: 20px;
+  color: white;
+  background-color: palevioletred;
+  border: solid 1px;
+  border-radius: 3px;
+}
+.post-index{
+  width: 1000px;
+  height: 150px;
+  margin: 0 auto 10px;
+  border: solid 1px;
+  border-radius:3px;
+  padding-left: 10px;
+}
+.index-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+.index-head-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px;
+}
+.index-category{
+  margin-right: 40px;
+}
 /* エラーメッセージ */
 .error-message{
   color: red;
