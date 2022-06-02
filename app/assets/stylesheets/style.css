@@ -268,10 +268,19 @@ h1{
   font-size: 24px;
   border-bottom: solid 1px;
 }
+.avatar{
+  text-align: center;
+}
+.user-avatar{
+  height: 225px;
+  width: 225px;
+  border: double 4px;
+}
 .table{
   border-collapse: collapse;
   margin-bottom: 32px;
   width: 50%;
+  margin: 0 auto;
 }
 .table__col1{
   text-align: left;

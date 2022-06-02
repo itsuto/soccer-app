@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
 
   describe 'ユーザー新規登録' do
     context '新規登録できる場合' do
-      it 'usernameとemail、passwordとpassword_confirmationが存在すれば登録できる' do
+      it 'usernameとemail、passwordとpassword_confirmationとavatarが存在すれば登録できる' do
         expect(@user).to be_valid
       end
     end
@@ -61,6 +61,11 @@ RSpec.describe User, type: :model do
         @user.password_confirmation = @user.password
         @user.valid?
         expect(@user.errors.full_messages).to include('Password is invalid')
+      end
+      it 'avatarが空では登録できない' do
+        @user.avatar = nil
+        @user.valid?
+        expect(@user.errors.full_messages).to include("Avatar can't be blank")
       end
     end
   end

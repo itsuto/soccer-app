@@ -8,4 +8,5 @@ class User < ApplicationRecord
 
   validates :username, presence: true
   validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: 'is invalid' }
+  validates :avatar, presence: true
 end

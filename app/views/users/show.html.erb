@@ -4,12 +4,25 @@
       <h2 class="user-heading">
         <%= "#{@user.username}さんの情報"%>
       </h2>
+      <div class="avatar">
+        <% if @user.avatar.attached? %>
+          <%= image_tag @user.avatar, class: 'user-avatar' %>
+        <% else %>
+          <%= image_tag "avatar.png" %>
+        <% end %>
+      </div>  
       <table class="table">
         <tbody>
           <tr>
             <th class="table__col1">名前</th>
             <td class="table__col2"><%= @user.username %></td>
           </tr>
+        <% if user_signed_in? && current_user.id == @user.id %>
+          <tr>
+            <th class="table__col1">メールアドレス</th>
+            <td class="table__col2"><%= @user.email %></td>
+          </tr>
+        <% end %>
         </tbody>
       </table>
       <h2 class="user-heading">
