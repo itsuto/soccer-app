@@ -189,6 +189,11 @@ h1{
   border-radius:3px;
   padding-left: 10px;
 }
+.post-name{
+  font-size: 15px;
+  margin-left: 220px;
+  font-size: 16px;
+}
 .index-head{
   display: flex;
   justify-content: space-between;
