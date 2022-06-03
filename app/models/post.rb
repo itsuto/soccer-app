@@ -7,4 +7,12 @@ class Post < ApplicationRecord
   validates :title, :content, presence: true
   validates :genre_id, numericality: { other_than: 1, message: "can't be blank" }
   validates :category_id, numericality: { other_than: 1, message: "can't be blank" }
+
+  def self.search(search)
+    if search != ""
+      Post.where('title LIKE(?)', "%#{search}%")
+    else
+      Post.all
+    end
+  end
 end
