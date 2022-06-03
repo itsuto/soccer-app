@@ -28,7 +28,7 @@
       <h2 class="user-heading">
         <%= "#{@user.username}さんの練習メニュー" %>
       </h2>
-      <div class="user__card">
+      <div class="card-wrapper">
         <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
       <%= render partial: 'posts/post', collection: @posts %>
       </div>
