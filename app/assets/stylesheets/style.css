@@ -81,13 +81,6 @@ div {
   min-height: calc(100vh - 135px);
 }
 /* ユーザー */
-.row{
-  min-height: calc(100vh - 135px);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .container{
   position: absolute;
   margin: 0 auto;
@@ -171,6 +164,23 @@ h1{
   height: 30px;
 }
 /* 練習メニュー一覧 */
+.row{
+  min-height: calc(100vh - 135px);
+}
+.search-form {
+  text-align: center;
+  padding-top: 32px;
+  display: block;
+}
+
+.search-form .search-input {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.search-form .search-btn {
+  width: 10%;
+}
 .tr-index{
   width: 200px;
   text-align: center;
