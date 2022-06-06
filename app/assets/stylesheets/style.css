@@ -308,6 +308,17 @@ h1{
 .comments a:hover {
   text-decoration: underline;
 }
+.comment{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.comment_delete {
+  margin-left: 40px;
+}
+.comment_delete a {
+  color: red;
+}
 
 /* ユーザー詳細 */
 .user__wrapper{
