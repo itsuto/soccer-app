@@ -102,9 +102,9 @@ https://docs.google.com/spreadsheets/d/1wpZ4bl38L1Elv_MkKN_x4IkhmRRU-3ExK0JUyxp6
 ・タスク管理  
 
 # ローカルでの動作方法  
-% git clone https://git.heroku.com/soccer-app-37896.git
-% cd soccer-app
-% bundle install
+% git clone https://git.heroku.com/soccer-app-37896.git  
+% cd soccer-app  
+% bundle install  
 % yarn install
 
 # 工夫したポイント  
