@@ -220,6 +220,10 @@ h1{
 .index-category{
   margin-right: 40px;
 }
+.more_list {
+  list-style: none;
+}
+
 /* 練習メニュー詳細ページ */
 .post__wrapper{
   min-height: calc(100vh - 135px);
@@ -372,6 +376,9 @@ h1{
 .error-message{
   color: red;
   font-size: 20px;
+}
+.error_explanation {
+  list-style: none;
 }
 
 /* ログイン・サインイン */
