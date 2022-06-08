@@ -8,6 +8,6 @@ class User < ApplicationRecord
   has_many :comments
 
   validates :username, presence: true
-  validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: 'is invalid' }
+  validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i }, allow_blank: true
   validates :avatar, presence: true
 end

@@ -25,12 +25,12 @@ RSpec.describe Post, type: :model do
       it 'category_idがからでは投稿できない' do
         @post.category_id = 1
         @post.valid?
-        expect(@post.errors.full_messages).to include("Category can't be blank")
+        expect(@post.errors.full_messages).to include("Category を選択してください")
       end
       it 'genre_idが空では投稿できない' do
         @post.genre_id = 1
         @post.valid?
-        expect(@post.errors.full_messages).to include("Genre can't be blank")
+        expect(@post.errors.full_messages).to include("Genre を選択してください")
       end
       it 'userが紐づいていないと投稿できない' do
         @post.user = nil
