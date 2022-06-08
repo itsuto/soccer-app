@@ -79,6 +79,7 @@ div {
 /* トップページ */
 .main{
   min-height: calc(100vh - 135px);
+  overflow-y: scroll;
 }
 /* ユーザー */
 .container{
@@ -257,6 +258,11 @@ h1{
   font-size: 20px;
   font-weight: bold;
 }
+.title_text {
+  text-align: center;
+  width: 50%;
+  height: 30px;
+}
 .detail__message {
   width: 50%;
   height: 150px;
@@ -283,11 +289,19 @@ h1{
   color: #fff;
   background: #999;
 }
+.hover-video {
+  width: 300px;
+  height: 250px;
+}
+.hover-video video {
+  width: 320px;
+  height: 250px;
+}
 
 /* コメント */
 .comment_head {
   text-align: center;
-  margin: 20px auto;
+  margin: 0 auto 5px;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
   background-color: white;

@@ -21,7 +21,7 @@
       <div class="post__body">
         <div class="post__detail">
           <p class="detail__title">タイトル</p>
-          <div class="detail__message">
+          <div class="title_text">
             <%= @post.title %>
           </div>
         </div>
@@ -31,6 +31,14 @@
             <%= @post.content %>
           </div>
         </div>
+        <div class="post__detail">
+          <p class="detail__title">動画</p>
+          <% if @post.video.attached? %>
+           <div class="hover-video">
+           <video src="<%= rails_blob_path(@post.video) %>" type="video/mp4" controls></video>
+           </div>
+          <% end %>
+        </div>  
       </div>
         <div class="comment_head">
           <% if user_signed_in? %>

@@ -20,6 +20,11 @@
     <%= f.collection_select(:genre_id, Genre.all, :id, :name, { include_blank: false}, {class:"select-box", id:"post-genre"}) %>
   </div>
 
+  <div class="field">
+    <%= f.label :'video' %><br />
+    <%= f.file_field :video %>
+  </div>
+
   <div class="actions">
     <%= f.submit "投稿する", class: :form__btn  %>
   </div>
