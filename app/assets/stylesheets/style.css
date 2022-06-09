@@ -62,8 +62,12 @@ div {
   margin-top: 30px;
 }
 .greeting__link{
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
+  font-size: 20px;
+}
+.greeting__link:hover {
+  text-decoration: underline;
 }
 .page-heading {
   font-size: 30px;
@@ -200,11 +204,18 @@ h1{
   border: solid 1px;
   border-radius:3px;
   padding-left: 10px;
+  background-color: beige;
 }
 .post-name{
-  font-size: 15px;
   margin-left: 220px;
   font-size: 16px;
+}
+.post-name a {
+  color: black;
+  text-decoration: none;
+}
+.post-name a:hover {
+  text-decoration: underline;
 }
 .index-head{
   display: flex;
@@ -223,6 +234,9 @@ h1{
 }
 .more_list {
   list-style: none;
+}
+a {
+  text-decoration: none;
 }
 
 /* 練習メニュー詳細ページ */
@@ -266,9 +280,10 @@ h1{
 .detail__message {
   width: 50%;
   height: 150px;
-  text-align: center;
-  white-space: pre-wrap;
+  white-space: pre-line;
   overflow: scroll;
+  border: solid 1px;
+  border-radius: 3px;
 }
 .post__manage{
   display: flex;
@@ -306,11 +321,11 @@ h1{
   margin: 0 auto 5px;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-  background-color: white;
+  background-color: beige;
   box-sizing: border-box;
   border: 1px black solid;
   border-radius: 5px;
-  width: 600px;
+  width: 50%;
 }
 
 .container h3 {
@@ -319,9 +334,7 @@ h1{
   font-weight: normal;
   font-size: 20px;
   color: #666;
-  
 }
-
 .comments {
   padding: 5px;
   margin-top: 15px;
