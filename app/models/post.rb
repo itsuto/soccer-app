@@ -9,11 +9,4 @@ class Post < ApplicationRecord
 
   validates :title, :content, :genre_id, :category_id, presence: true
 
-  def self.search(search)
-    if search != ""
-      Post.where('title LIKE(?)', "%#{search}%")
-    else
-      Post.all
-    end
-  end
 end
