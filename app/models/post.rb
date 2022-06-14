@@ -7,9 +7,7 @@ class Post < ApplicationRecord
   has_one_attached :video
 
 
-  validates :title, :content, presence: true
-  validates :genre_id, numericality: { other_than: 1, message: "を選択してください" }
-  validates :category_id, numericality: { other_than: 1, message: "を選択してください" }
+  validates :title, :content, :genre_id, :category_id, presence: true
 
   def self.search(search)
     if search != ""

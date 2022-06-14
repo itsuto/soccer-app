@@ -12,12 +12,12 @@
 
   <div class="field">
     <%= f.label :category, "カテゴリー" %><br />
-    <%= f.collection_select(:category_id, Category.all, :id, :name, { include_blank: false}, {class:"select-box", id:"post-category"}) %>
+    <%= f.collection_select(:category_id, Category.all, :id, :name, { include_blank: "---"}, {class:"select-box", id:"post-category"}) %>
   </div>
 
   <div class="field">
     <%= f.label :genre, "ジャンル" %><br />
-    <%= f.collection_select(:genre_id, Genre.all, :id, :name, { include_blank: false}, {class:"select-box", id:"post-genre"}) %>
+    <%= f.collection_select(:genre_id, Genre.all, :id, :name, { include_blank: "---"}, {class:"select-box", id:"post-genre"}) %>
   </div>
 
   <div class="field">
