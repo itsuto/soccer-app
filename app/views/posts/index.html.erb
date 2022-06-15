@@ -1,11 +1,13 @@
 <main class="main">
   <div class="inner">
-   <h3><%= link_to '練習メニュー検索', search_posts_path, class: "search-form"%></h3>
-     <div class="tr-index">
+   <div class="search-form">
+     <%= link_to '練習メニュー検索', search_posts_path %>
+   </div>
+   <div class="tr-index">
      練習メニューの一覧
-     </div>
-     <div class="card__wrapper">
+   </div>
+   <div class="card__wrapper">
        <%= render partial: 'post', collection: @posts %>
-     </div>
+   </div>
   </div>   
 </main>

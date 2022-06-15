@@ -1,23 +1,25 @@
 <div class="main">
-  <%= search_form_for @q, url: search_posts_path, html: {id: "search-form"} do |f| %>
-    <div class="search-field">
-      <%= f.label :title_cont, 'タイトル' %>
-      <br>
-      <%= f.text_field :title_cont, placeholder: 'タイトル' %>
-    </div>
-   
-    <div class="search-field">
-      <%= f.label :category_id_eq, 'カテゴリー' %>
-      <br>
-      <%= f.collection_select(:category_id_eq, Category.all, :id, :name, {include_blank: "---"}) %>
-    </div>
-    <div class="search-field">
-      <%= f.label :genre_id_eq, 'ジャンル' %>
-      <br>
-      <%= f.collection_select(:genre_id_eq, Genre.all, :id, :name, {include_blank: "---"}) %>
-    </div>
-    <%= f.submit '検索', class: "search-btn" %>
-  <% end %>
+  <div class="search-list">
+    <%= search_form_for @q, url: search_posts_path, html: {id: "search-form"} do |f| %>
+      <div class="search-field">
+        <%= f.label :title_cont, 'タイトル' %>
+        <br>
+        <%= f.text_field :title_cont, placeholder: 'タイトル' %>
+      </div>
+    
+      <div class="search-field">
+        <%= f.label :category_id_eq, 'カテゴリー' %>
+        <br>
+        <%= f.collection_select(:category_id_eq, Category.all, :id, :name, {include_blank: "---"}) %>
+      </div>
+      <div class="search-field">
+        <%= f.label :genre_id_eq, 'ジャンル' %>
+        <br>
+        <%= f.collection_select(:genre_id_eq, Genre.all, :id, :name, {include_blank: "---"}) %>
+      </div>
+      <%= f.submit '検索', class: "search-btn" %>
+    <% end %>
+  </div>  
   <div class="contents_row">
     <% @posts.each do |post| %>
       <%= render partial: "post", locals: { post: post } %>
