@@ -1,14 +1,13 @@
 <main class="main">
   <div class="inner">
-    <%= form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form| %>
-      <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
-      <%= form.submit "検索", class: "search-btn" %>
-    <% end %>
-     <div class="tr-index">
+   <div class="search-form">
+     <%= link_to '練習メニュー検索', search_posts_path %>
+   </div>
+   <div class="tr-index">
      練習メニューの一覧
-     </div>
-     <div class="card__wrapper">
+   </div>
+   <div class="card__wrapper">
        <%= render partial: 'post', collection: @posts %>
-     </div>
+   </div>
   </div>   
 </main>
