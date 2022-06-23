@@ -275,10 +275,10 @@ h1{
   width: 1000px;
   height: 150px;
   margin: 0 auto 10px;
-  border: solid 1px;
-  border-radius:3px;
-  padding-left: 10px;
-  background-color: beige;
+  padding: 0.5em 1em;
+  color: #232323;
+  background: #fff8e8;
+  border-left: solid 10px #ffc06e;
 }
 .post-name{
   margin-left: 220px;
