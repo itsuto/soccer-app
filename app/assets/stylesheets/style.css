@@ -216,14 +216,60 @@ h1{
 }
 
 .tr-index{
-  width: 200px;
+  width: 150px;
   text-align: center;
   margin: 20px auto 20px;
   font-size: 20px;
-  color: white;
-  background-color: palevioletred;
-  border: solid 1px;
-  border-radius: 3px;
+  position: relative;
+  height: 45px;
+}
+.tr-index::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: -10px;
+  left: -35px;
+  z-index: -2;
+  border: 20px solid #56adf3;
+  border-left-color: transparent;
+}
+.tr-index::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: -10px;
+  right: -35px;
+  z-index: -2;
+  border: 20px solid #56adf3;
+  border-right-color: transparent;
+}
+.tr-index h3 {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 45px;
+  font-size: 18px;
+  color: #FFF;
+  background: #2196F3;
+}
+.tr-index h3::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 10px transparent;
+  border-right: solid 15px #397eb5;
+}
+.tr-index h3::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  right: 0;
+  border: none;
+  border-bottom: solid 10px transparent;
+  border-left: solid 15px #397eb5;
 }
 .post-index{
   width: 1000px;
